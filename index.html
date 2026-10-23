@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior 2: Class 10 - Since, For & City Vlogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito', sans-serif; background-color: #f0fdf4; }
+        h1, h2, h3, h4, h5 { font-family: 'Fredoka One', cursive; font-weight: normal; }
+        .card-pop { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .card-pop:hover { transform: translateY(-3px); box-shadow: 0 10px 20px -5px rgba(0,0,0,0.1); }
+        .teacher-note { border-left: 5px solid #f59e0b; background-color: #fffbeb; padding: 15px; border-radius: 0 8px 8px 0; margin-bottom: 20px; color: #b45309; }
+        .v3-card { background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; cursor: pointer; transition: all 0.3s ease; }
+        .v3-card:active { transform: scale(0.95); }
+        .hide { display: none; }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-6 md:p-8 text-white shadow-xl mb-8 max-w-5xl mx-auto border-b-8 border-teal-300 relative overflow-hidden">
+        <div class="absolute top-0 right-0 text-9xl opacity-20 transform translate-x-10 -translate-y-5">🗽</div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 relative z-10">
+            <div>
+                <h1 class="text-4xl md:text-5xl mb-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-100 to-white drop-shadow-sm">Travels & Time</h1>
+                <p class="text-xl opacity-95 font-semibold text-teal-100">Junior 2 - Class 10</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-white text-teal-900 px-4 py-1.5 rounded-full font-bold shadow-sm text-sm">Level A2+</span>
+                <span class="bg-teal-900 text-white px-4 py-1.5 rounded-full font-bold shadow-sm text-sm border-2 border-teal-950">Time: 2.5h</span>
+            </div>
+        </div>
+        
+        <div class="bg-white/10 p-5 rounded-2xl backdrop-blur-sm border border-white/20 relative z-10">
+            <h3 class="text-2xl mb-2 text-teal-100">🎯 Class Objectives</h3>
+            <ul class="list-none space-y-1 font-semibold text-lg">
+                <li>✓ Warm Up: V3 Review & Present Perfect Speaking.</li>
+                <li>✓ Grammar: Master "How long...?", "Since", and "For".</li>
+                <li>✓ Listening: Focus-heavy Dictogloss Challenge (Page 91).</li>
+                <li>✓ Reading: New York Diary Comprehension (Page 92).</li>
+                <li>✓ Speaking/Writing: Create a Colombia Tourist Vlog.</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-10">
+
+        <!-- PART 1: WARM UP -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-blue-400 card-pop">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 TEACHER TRANSITION & WARM-UP:</h4>
+                <p>"Welcome everyone! Today we are talking about time, travel, and things we've done. But first, let's wake up our brains with the V3 verbs!"<br>
+                <strong>Action:</strong> Click the card to show a V1 verb. The class shouts the V3 form. Click again for a quick speaking prompt using Present Perfect.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">🧠</span>
+                <h2 class="text-3xl text-blue-600">Part 1: The V3 Brain Wake-Up</h2>
+            </div>
+            
+            <div class="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200 text-center flex flex-col justify-center items-center min-h-[300px]">
+                <div id="warmup-card" onclick="nextWarmupState()" class="v3-card w-full md:w-2/3 h-48 rounded-2xl flex flex-col items-center justify-center shadow-lg border-4 border-blue-300">
+                    <p class="text-sm font-bold opacity-80 uppercase tracking-widest mb-2">Click to Start</p>
+                    <h3 class="text-5xl font-black">READY?</h3>
+                </div>
+                <p class="mt-6 text-gray-600 font-bold text-lg" id="warmup-counter">0 / 10</p>
+            </div>
+        </section>
+
+        <!-- PART 2: GRAMMAR EXPLANATION -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-purple-500 card-pop">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 GRAMMAR CONTEXT (Page 91):</h4>
+                <p>"Now that we know how to say we HAVE DONE something, what if someone asks exactly HOW LONG we have done it? We need two magic words: Since and For."<br>
+                <strong>Action:</strong> Explain the visuals clearly. 'Since' is a starting point (a calendar date/clock). 'For' is a measuring tape (amount of time).</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">📏</span>
+                <h2 class="text-3xl text-purple-600">Part 2: Since vs. For</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                <div class="bg-pink-50 p-6 rounded-2xl border-2 border-pink-200 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 text-8xl opacity-10">📍</div>
+                    <h3 class="text-3xl text-pink-700 mb-2">📍 SINCE</h3>
+                    <p class="text-pink-900 font-bold text-xl mb-4">A Starting Point in Time</p>
+                    <ul class="text-lg space-y-2 font-medium text-gray-800">
+                        <li>...since <span class="bg-pink-200 px-2 rounded">2018</span></li>
+                        <li>...since <span class="bg-pink-200 px-2 rounded">yesterday</span></li>
+                        <li>...since <span class="bg-pink-200 px-2 rounded">I was eight</span></li>
+                        <li>...since <span class="bg-pink-200 px-2 rounded">lunchtime</span></li>
+                    </ul>
+                </div>
+                
+                <div class="bg-indigo-50 p-6 rounded-2xl border-2 border-indigo-200 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 text-8xl opacity-10">⏳</div>
+                    <h3 class="text-3xl text-indigo-700 mb-2">⏳ FOR</h3>
+                    <p class="text-indigo-900 font-bold text-xl mb-4">A Duration (Amount of time)</p>
+                    <ul class="text-lg space-y-2 font-medium text-gray-800">
+                        <li>...for <span class="bg-indigo-200 px-2 rounded">ten years</span></li>
+                        <li>...for <span class="bg-indigo-200 px-2 rounded">two days</span></li>
+                        <li>...for <span class="bg-indigo-200 px-2 rounded">a long time</span></li>
+                        <li>...for <span class="bg-indigo-200 px-2 rounded">three months</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grammar Practice Hub -->
+            <div class="bg-gray-100 p-6 rounded-2xl border-2 border-gray-300">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Grammar Practice Hub (10 Rounds Each)</h3>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-6 border-b-2 border-gray-200 pb-6">
+                    <button onclick="loadExercise(1)" class="bg-purple-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-purple-700 transition">Ex 1: Since or For?</button>
+                    <button onclick="loadExercise(2)" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition">Ex 2: Finish the Sentence</button>
+                    <button onclick="loadExercise(3)" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition">Ex 3: Find the Mistake</button>
+                </div>
+
+                <div id="exercise-container" class="bg-white p-6 rounded-xl border border-gray-200 min-h-[200px] flex flex-col items-center justify-center text-center">
+                    <h4 class="text-xl text-gray-500 font-bold">Select an exercise above to begin!</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 3: FUN SPEAKING (HOW LONG) -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-orange-400 card-pop">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 SPEAKING ACTIVITY:</h4>
+                <p>"Let's practice asking 'How long have you...?' but with a fun twist!"<br>
+                <strong>Action:</strong> Click the button to generate a silly character. Have Student A ask Student B: "How long have you been a [character]?" Student B must invent an answer using Since or For.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">🎭</span>
+                <h2 class="text-3xl text-orange-600">Part 3: The "How Long" Roleplay</h2>
+            </div>
+            
+            <div class="bg-orange-50 p-8 rounded-2xl border-2 border-orange-200 text-center">
+                <p class="text-gray-500 font-bold mb-2 uppercase">Your New Identity:</p>
+                <h3 id="roleplay-identity" class="text-4xl font-black text-gray-800 mb-6 h-12">Click to reveal!</h3>
+                <p class="text-xl text-orange-800 font-bold mb-6">Partner A: "How long have you been a...?"<br>Partner B: "I have been a... since/for..."</p>
+                <button onclick="generateIdentity()" class="bg-orange-500 text-white font-bold px-8 py-3 rounded-full hover:bg-orange-600 shadow-md transition">Get New Identity 🎲</button>
+            </div>
+        </section>
+
+        <!-- PART 4: LISTENING DICTOGLOSS -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-red-500 card-pop">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 LISTENING (Page 91) - Dictogloss Challenge:</h4>
+                <p>"This isn't a normal listening activity. This is a memory and teamwork challenge."<br>
+                <strong>Instructions for Teacher:</strong> 
+                1. Play the audio (David and Matt) OR read the transcript twice.
+                2. Listen 1: Pencils down. Just listen.
+                3. Listen 2: Students write down only KEYWORDS (verbs, names, times).
+                4. Group Work: In groups of 3, they have 5 minutes to rewrite exactly what happened in the story.
+                5. Check answers using the True/False game below.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">👂</span>
+                <h2 class="text-3xl text-red-600">Part 4: The Dictogloss Challenge</h2>
+            </div>
+            
+            <ol class="space-y-4 text-lg font-bold text-gray-700 bg-red-50 p-6 rounded-xl border border-red-200 mb-8">
+                <li>1️⃣ Listen with your pencils DOWN.</li>
+                <li>2️⃣ Listen again and write KEYWORDS only.</li>
+                <li>3️⃣ Work with your team to rebuild the story!</li>
+            </ol>
+
+            <div class="bg-gray-800 p-6 rounded-2xl text-center">
+                <h3 class="text-2xl font-black text-white mb-4">Post-Listening: True or False?</h3>
+                <p id="tf-question" class="text-3xl text-yellow-300 font-bold mb-6 h-16">Matt lives in London.</p>
+                <div class="flex justify-center gap-4">
+                    <button onclick="checkTF(true)" class="bg-green-500 text-white font-bold px-6 py-2 rounded hover:bg-green-600">TRUE</button>
+                    <button onclick="checkTF(false)" class="bg-red-500 text-white font-bold px-6 py-2 rounded hover:bg-red-600">FALSE</button>
+                </div>
+                <p id="tf-feedback" class="mt-4 text-xl font-bold h-8 text-white"></p>
+                <button onclick="nextTF()" class="mt-4 text-gray-400 hover:text-white underline text-sm">Next Question >></button>
+            </div>
+        </section>
+
+        <!-- PART 5: READING PAGE 92 -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-emerald-500 card-pop">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 READING (Page 92):</h4>
+                <p>Have the students open their books to Page 92 ("My New York diary"). Have them read the text in pairs. Then, use this interactive quiz to check comprehension.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">📖</span>
+                <h2 class="text-3xl text-emerald-600">Part 5: New York Diary (Page 92)</h2>
+            </div>
+
+            <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-200 text-center">
+                <h3 class="text-2xl font-black text-emerald-800 mb-6">Comprehension Quiz</h3>
+                <p id="reading-q" class="text-2xl text-gray-800 font-bold mb-8">Why did the family go to New York?</p>
+                <button onclick="showReadingAnswer()" class="bg-emerald-600 text-white font-bold px-6 py-2 rounded-full mb-4 hover:bg-emerald-700">Reveal Answer 👀</button>
+                <p id="reading-a" class="text-xl text-emerald-700 font-bold h-10 hidden"></p>
+                <div class="mt-4">
+                    <button onclick="nextReadingQ()" class="text-emerald-900 font-bold underline">Next Question ➡️</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 6: FINAL VLOG PROJECT -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-t-8 border-pink-500 card-pop mb-20">
+            <div class="teacher-note">
+                <h4 class="font-bold text-lg mb-2">📝 PRODUCTIVE TASK:</h4>
+                <p>Students must create a diary/vlog entry similar to the New York text, but about a city in Colombia! They must mix Present Perfect ("I have been here for 2 days") with Simple Past ("Yesterday we ate..."). Put them in pairs and have them present their "vlog" to the class.</p>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-4xl">📹</span>
+                <h2 class="text-3xl text-pink-600">Part 6: The Colombia Tourist Vlog</h2>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-2xl border-2 border-gray-200">
+                <p class="text-xl text-gray-800 font-bold mb-4">Imagine you are a tourist visiting a city in Colombia. Write a vlog script for your YouTube channel!</p>
+                
+                <div class="bg-white p-6 rounded-xl shadow-inner border border-pink-200 mb-6">
+                    <h4 class="font-black text-pink-600 mb-4 text-xl">Vlog Structure:</h4>
+                    <ul class="space-y-3 text-lg font-medium">
+                        <li><strong>1. Greeting:</strong> "Hey guys! We are in [City]!"</li>
+                        <li><strong>2. How long (Present Perfect):</strong> "We have been here for [Time] / since [Day]."</li>
+                        <li><strong>3. What you did (Simple Past):</strong> "Yesterday, we visited... We ate..."</li>
+                        <li><strong>4. Opinion:</strong> "It was amazing / exhausting / beautiful!"</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-gray-500 font-bold mb-2">Don't know where to go? Click for a random city!</p>
+                    <button onclick="randomCity()" class="bg-pink-500 text-white font-bold px-6 py-3 rounded-full hover:bg-pink-600 shadow-md">Spin the Globe 🌍</button>
+                    <p id="city-result" class="text-3xl font-black text-pink-700 mt-4 h-10"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // --- Warm Up ---
+        const warmupData = [
+            { v1: 'Eat', v3: 'Eaten', prompt: 'Have you ever EATEN strange food?' },
+            { v1: 'See', v3: 'Seen', prompt: 'Have you ever SEEN a famous person?' },
+            { v1: 'Go', v3: 'Gone', prompt: 'Have you ever GONE to another country?' },
+            { v1: 'Be', v3: 'Been', prompt: 'How long have you BEEN a student here?' },
+            { v1: 'Have', v3: 'Had', prompt: 'How long have you HAD your mobile phone?' },
+            { v1: 'Know', v3: 'Known', prompt: 'How long have you KNOWN your best friend?' },
+            { v1: 'Fly', v3: 'Flown', prompt: 'Have you ever FLOWN in an airplane?' },
+            { v1: 'Ride', v3: 'Ridden', prompt: 'Have you ever RIDDEN a horse?' },
+            { v1: 'Swim', v3: 'Swum', prompt: 'Have you ever SWUM in the ocean?' },
+            { v1: 'Win', v3: 'Won', prompt: 'Have you ever WON a competition?' }
+        ];
+        
+        let warmupIndex = 0;
+        let warmupStep = 0; // 0=V1, 1=V3, 2=Prompt
+
+        function nextWarmupState() {
+            const card = document.getElementById('warmup-card');
+            if (warmupIndex >= warmupData.length) {
+                card.innerHTML = `<h3 class="text-4xl font-black">All Done!</h3>`;
+                return;
+            }
+
+            const data = warmupData[warmupIndex];
+            
+            if (warmupStep === 0) {
+                card.innerHTML = `<span class="block text-sm opacity-80 uppercase tracking-widest mb-1">Base Verb</span><h3 class="text-6xl font-black">${data.v1}</h3>`;
+                warmupStep = 1;
+            } else if (warmupStep === 1) {
+                card.innerHTML = `<span class="block text-sm text-yellow-300 uppercase tracking-widest mb-1">V3 (Past Participle)</span><h3 class="text-6xl font-black text-yellow-400">${data.v3}</h3>`;
+                warmupStep = 2;
+            } else if (warmupStep === 2) {
+                card.innerHTML = `<span class="block text-sm opacity-80 uppercase tracking-widest mb-1">Ask a partner:</span><h3 class="text-2xl font-bold px-4 text-center leading-snug">${data.prompt}</h3>`;
+                document.getElementById('warmup-counter').innerText = `${warmupIndex + 1} / 10`;
+                warmupIndex++;
+                warmupStep = 0;
+            }
+        }
+
+        // --- Grammar Exercises ---
+        const ex1Data = [
+            { q: "... _____ 2020.", ans: "Since", type: "since" },
+            { q: "... _____ three years.", ans: "For", type: "for" },
+            { q: "... _____ Monday.", ans: "Since", type: "since" },
+            { q: "... _____ a long time.", ans: "For", type: "for" },
+            { q: "... _____ I was a baby.", ans: "Since", type: "since" },
+            { q: "... _____ five months.", ans: "For", type: "for" },
+            { q: "... _____ 8 o'clock.", ans: "Since", type: "since" },
+            { q: "... _____ two weeks.", ans: "For", type: "for" },
+            { q: "... _____ last summer.", ans: "Since", type: "since" },
+            { q: "... _____ a few minutes.", ans: "For", type: "for" }
+        ];
+
+        const ex2Data = [
+            { q: "Arlo has had his costume...", opts: ["since he was eight.", "for he was eight."], correct: 0 },
+            { q: "He has been a juggler...", opts: ["since ten years.", "for ten years."], correct: 1 },
+            { q: "Ting's uncle has been a comedian...", opts: ["since lunchtime.", "for lunchtime."], correct: 0 },
+            { q: "She hasn't seen his show...", opts: ["since a long time.", "for a long time."], correct: 1 },
+            { q: "Arlo has been ready...", opts: ["since she was five.", "for she was five."], correct: 0 },
+            { q: "I have lived here...", opts: ["for 2015.", "since 2015."], correct: 1 },
+            { q: "We haven't eaten...", opts: ["for three hours.", "since three hours."], correct: 0 },
+            { q: "They have played tennis...", opts: ["since this morning.", "for this morning."], correct: 0 },
+            { q: "She has been my friend...", opts: ["since five years.", "for five years."], correct: 1 },
+            { q: "I have had this phone...", opts: ["for January.", "since January."], correct: 1 }
+        ];
+
+        const ex3Data = [
+            { wrong: "I have lived here since two years.", right: "I have lived here FOR two years." },
+            { wrong: "She has been a doctor for 2018.", right: "She has been a doctor SINCE 2018." },
+            { wrong: "We have study English since 2020.", right: "We have STUDIED English since 2020." },
+            { wrong: "He have played football for a long time.", right: "He HAS played football for a long time." },
+            { wrong: "They hasn't eaten since 8 AM.", right: "They HAVEN'T eaten since 8 AM." },
+            { wrong: "I've had this bike for I was ten.", right: "I've had this bike SINCE I was ten." },
+            { wrong: "How long you have lived here?", right: "How long HAVE YOU lived here?" },
+            { wrong: "She's been ready since three hours.", right: "She's been ready FOR three hours." },
+            { wrong: "I haven't seen him for Monday.", right: "I haven't seen him SINCE Monday." },
+            { wrong: "We have been friends since ten years.", right: "We have been friends FOR ten years." }
+        ];
+
+        let currentEx = 0;
+        let currentRound = 0;
+
+        function loadExercise(exNum) {
+            currentEx = exNum;
+            currentRound = 0;
+            renderExercise();
+        }
+
+        function renderExercise() {
+            const container = document.getElementById('exercise-container');
+            if (currentRound >= 10) {
+                container.innerHTML = `<h4 class="text-3xl text-green-600 font-black">🎉 EXERCISE COMPLETE! 🎉</h4>`;
+                return;
+            }
+
+            let html = `<div class="w-full"><p class="text-sm text-gray-400 font-bold mb-4">ROUND ${currentRound + 1} OF 10</p>`;
+
+            if (currentEx === 1) {
+                const item = ex1Data[currentRound];
+                html += `<p class="text-3xl font-black text-gray-800 mb-8">${item.q}</p>
+                         <div class="flex justify-center gap-4">
+                            <button onclick="checkEx1('since')" class="bg-pink-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-700 text-xl shadow-md">Since</button>
+                            <button onclick="checkEx1('for')" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 text-xl shadow-md">For</button>
+                         </div>`;
+            } else if (currentEx === 2) {
+                const item = ex2Data[currentRound];
+                html += `<p class="text-2xl font-black text-gray-800 mb-6">${item.q}</p>
+                         <div class="flex flex-col gap-3 max-w-md mx-auto">
+                            <button onclick="checkEx2(0)" class="bg-blue-100 border-2 border-blue-300 text-blue-900 font-bold py-3 px-6 rounded-lg hover:bg-blue-200 text-lg text-left shadow-sm">A) ${item.opts[0]}</button>
+                            <button onclick="checkEx2(1)" class="bg-blue-100 border-2 border-blue-300 text-blue-900 font-bold py-3 px-6 rounded-lg hover:bg-blue-200 text-lg text-left shadow-sm">B) ${item.opts[1]}</button>
+                         </div>`;
+            } else if (currentEx === 3) {
+                const item = ex3Data[currentRound];
+                html += `<p class="text-red-500 font-bold text-lg mb-2">Find the mistake:</p>
+                         <p class="text-2xl font-black text-gray-800 mb-6 line-through decoration-red-500 decoration-4">${item.wrong}</p>
+                         <button id="reveal-btn" onclick="revealEx3()" class="bg-gray-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 mb-4">Reveal Fix</button>
+                         <p id="fix-text" class="text-2xl font-black text-green-600 hidden">${item.right}</p>
+                         <button id="next-btn" onclick="nextRound()" class="mt-6 text-gray-500 underline hidden font-bold">Next Question >></button>`;
+            }
+            html += `<p id="ex-feedback" class="mt-6 text-xl font-bold h-8"></p></div>`;
+            container.innerHTML = html;
+        }
+
+        function checkEx1(guess) {
+            const correct = ex1Data[currentRound].type;
+            showFeedback(guess === correct);
+        }
+
+        function checkEx2(guessIndex) {
+            const correct = ex2Data[currentRound].correct;
+            showFeedback(guessIndex === correct);
+        }
+
+        function revealEx3() {
+            document.getElementById('fix-text').classList.remove('hidden');
+            document.getElementById('reveal-btn').classList.add('hidden');
+            document.getElementById('next-btn').classList.remove('hidden');
+        }
+
+        function showFeedback(isCorrect) {
+            const fb = document.getElementById('ex-feedback');
+            if (isCorrect) {
+                fb.innerHTML = "<span class='text-green-600'>✅ Correct!</span>";
+                setTimeout(nextRound, 1000);
+            } else {
+                fb.innerHTML = "<span class='text-red-600'>❌ Try Again!</span>";
+            }
+        }
+
+        function nextRound() {
+            currentRound++;
+            renderExercise();
+        }
+
+        // --- Roleplay Generator ---
+        const identities = [
+            "A Vampire 🧛", "A Famous YouTuber 🤳", "A Zombie 🧟‍♂️", 
+            "An Astronaut 👩‍🚀", "A Professional Gamer 🎮", "A Rockstar 🎸", 
+            "A Pirate 🏴‍☠️", "A Superhero 🦸‍♂️", "A Ghost 👻"
+        ];
+        function generateIdentity() {
+            const el = document.getElementById('roleplay-identity');
+            el.innerText = identities[Math.floor(Math.random() * identities.length)];
+            el.classList.add('scale-110', 'text-orange-500');
+            setTimeout(() => el.classList.remove('scale-110', 'text-orange-500'), 200);
+        }
+
+        // --- TF Game (Listening Ex 6) ---
+        const tfData = [
+            { q: "1. Matt lives in London.", a: false, fix: "False! He lives in New York." },
+            { q: "2. His sister is four.", a: false, fix: "False! She is eight." },
+            { q: "3. Matt painted his sister's face.", a: false, fix: "False! David painted it." },
+            { q: "4. Matt's good at ice skating.", a: true, fix: "True! He is good at it." },
+            { q: "5. Matt's cousin is a girl.", a: false, fix: "False! We don't know, but the text implies otherwise." }
+        ];
+        let tfIndex = 0;
+
+        function checkTF(guess) {
+            const fb = document.getElementById('tf-feedback');
+            if (tfIndex >= tfData.length) return;
+            
+            if (guess === tfData[tfIndex].a) {
+                fb.innerHTML = `✅ ${tfData[tfIndex].fix}`;
+                fb.className = "mt-4 text-xl font-bold h-8 text-green-400";
+            } else {
+                fb.innerHTML = `❌ Wrong! ${tfData[tfIndex].fix}`;
+                fb.className = "mt-4 text-xl font-bold h-8 text-red-400";
+            }
+        }
+
+        function nextTF() {
+            tfIndex++;
+            if (tfIndex >= tfData.length) {
+                document.getElementById('tf-question').innerText = "All done!";
+                document.getElementById('tf-feedback').innerText = "";
+                return;
+            }
+            document.getElementById('tf-question').innerText = tfData[tfIndex].q;
+            document.getElementById('tf-feedback').innerText = "";
+        }
+
+        // --- Reading Comprehension ---
+        const readingQ = [
+            { q: "Why did the family go to New York?", a: "For Mum's Big Birthday Trip!" },
+            { q: "Which evening did they stay in the hotel?", a: "Thursday evening (they were too tired!)." },
+            { q: "What did they see in Central Park?", a: "Acrobats and musicians." },
+            { q: "Where did they go on Friday?", a: "The science museum and planetarium." },
+            { q: "How long has Dad had the theatre tickets?", a: "Since last year!" },
+            { q: "What happened to Dad at the theatre?", a: "He fell asleep and snored!" }
+        ];
+        let rIndex = 0;
+
+        function showReadingAnswer() {
+            const ans = document.getElementById('reading-a');
+            ans.innerText = readingQ[rIndex].a;
+            ans.classList.remove('hidden');
+        }
+
+        function nextReadingQ() {
+            rIndex++;
+            if (rIndex >= readingQ.length) rIndex = 0; // loop back
+            document.getElementById('reading-q').innerText = readingQ[rIndex].q;
+            document.getElementById('reading-a').classList.add('hidden');
+        }
+
+        // --- Random City Generator ---
+        const cities = ["Medellín 🌸", "Cartagena 🏖️", "Cali 💃", "Bogotá 🏔️", "Santa Marta 🌊", "San Andrés 🌴", "Eje Cafetero ☕"];
+        function randomCity() {
+            const el = document.getElementById('city-result');
+            el.innerText = cities[Math.floor(Math.random() * cities.length)];
+            el.classList.add('scale-110');
+            setTimeout(() => el.classList.remove('scale-110'), 200);
+        }
+    </script>
+</body>
+</html>
